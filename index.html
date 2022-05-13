@@ -4,9 +4,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Darianne's Portfolio</h1>
+   <nav>
+    <h1>DARIANNE SALINAS</h1>
+    <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+
+<button class="burger-menu" id="burger-menu">
+    <ion-icon class="bars" name="menu-outline"></ion-icon>
+</button>
+     </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="assets/images/heroImg.png"
+          alt="placeholder"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Bacon ipsum dolor amet prosciutto rump bacon bresaola corned beef pig porchetta turducken leberkas sausage short ribs burgdoggen shoulder t-bone. Ham hock ham swine flank. Filet mignon drumstick spare ribs alcatra, tri-tip capicola chuck beef ribs. Tri-tip porchetta jowl hamburger drumstick prosciutto pig beef ribs. Beef ribs cow buffalo, biltong frankfurter kielbasa leberkas kevin cupim prosciutto spare ribs porchetta venison short ribs. Ham ground round ribeye burgdoggen spare ribs bresaola beef drumstick turducken andouille flank chuck capicola.          </p>
+        </div>
+  </section>
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+          autem deleniti cupiditate molestias quis unde quae totam porro dicta
+          iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+          nostrum dolor minus, libero delectus praesentium perferendis
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+          consequuntur labore? Ea totam voluptas amet!
+        </p>
+      </section>
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+           
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+
+            <img
+              src="assets/icons/icons8-css3.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-javascript.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+           
+            <img
+              src="assets/icons/icons8-git.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+
+
+          </div>
+        </div>
+      </section>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="assets/images/captstone-ideation.png"
+              alt="Ideation"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Ideation</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/captstone-ideation.png"
+              alt=""
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Project Name</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/captstone-ideation.png"
+              alt=""
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Project Name</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+      </section>
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        
+        <a href="https://www.linkedin.com/in/darianne-salinas/" target="_blank"
+        ><img
+            src="assets/icons/icons8-linkedin-circled.gif"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+
+        <a href="https://github.com/DarianneSalinas" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" 
+            alt="Github" 
+            class="socicon"
+        /></a>
+
+
+        <a href="https://twitter.com/LtxDarianne" target="_blank"
+        ><img
+            src="assets/icons/icons8-twitter-circled.gif"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon"
+        /></a>
+
+        <a href="https://www.instagram.com/darsjay/" target="_blank"
+        ><img
+            src="assets/icons/icons8-instagram.gif"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+    
+
+    <!-- Footer section -->
+    <footer>
+        
+        <p class="copy">
+          <a href="https://twitter.com/ltxdarianne" target="_blank"></a>
+        
+        </p>
+  </footer>
+    <!-- Website scripts -->
+
+    <script src="./index.js"></script>
 </body>
 </html>
